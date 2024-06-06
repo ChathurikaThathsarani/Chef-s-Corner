@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCollectionViewCell" id="gTV-IL-0wX" customClass="CategoryCollectionViewCell" customModule="Chef_s_Corner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="211" height="75"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="211" height="75"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Khq-Sg-snj" customClass="CardView" customModule="Chef_s_Corner" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="211" height="75"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Ksu-en-ME4">
+                                <rect key="frame" x="8" y="10" width="56" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="QIh-Wq-ZX4"/>
+                                    <constraint firstAttribute="width" constant="56" id="b3Z-KI-Znj"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCb-AZ-vWF">
+                                <rect key="frame" x="72" y="29.666666666666668" width="131" height="15.666666666666668"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ksu-en-ME4" firstAttribute="top" secondItem="Khq-Sg-snj" secondAttribute="top" constant="10" id="NsC-I7-q4W"/>
+                            <constraint firstAttribute="width" constant="211" id="P59-yc-LMh"/>
+                            <constraint firstAttribute="bottom" secondItem="Ksu-en-ME4" secondAttribute="bottom" constant="10" id="QKy-Z2-o0q"/>
+                            <constraint firstAttribute="trailing" secondItem="cCb-AZ-vWF" secondAttribute="trailing" constant="8" id="W9q-Id-ZOK"/>
+                            <constraint firstItem="Ksu-en-ME4" firstAttribute="leading" secondItem="Khq-Sg-snj" secondAttribute="leadingMargin" id="Y06-7Y-Nfv"/>
+                            <constraint firstItem="cCb-AZ-vWF" firstAttribute="centerY" secondItem="Ksu-en-ME4" secondAttribute="centerY" id="YhE-UJ-mWM"/>
+                            <constraint firstItem="cCb-AZ-vWF" firstAttribute="leading" secondItem="Ksu-en-ME4" secondAttribute="trailing" constant="8" id="YwO-F3-GIw"/>
+                            <constraint firstAttribute="height" constant="75" id="tXA-4Y-rc4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Khq-Sg-snj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0m7-Fg-MUx"/>
+                <constraint firstAttribute="bottom" secondItem="Khq-Sg-snj" secondAttribute="bottom" id="47o-P8-ciK"/>
+                <constraint firstAttribute="trailing" secondItem="Khq-Sg-snj" secondAttribute="trailing" id="KaU-B1-wrM"/>
+                <constraint firstItem="Khq-Sg-snj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="l4D-4H-E55"/>
+            </constraints>
+            <size key="customSize" width="211" height="75"/>
+            <connections>
+                <outlet property="categoryImage" destination="Ksu-en-ME4" id="QxD-7m-4dB"/>
+                <outlet property="categoryLabel" destination="cCb-AZ-vWF" id="6Qk-Fp-kha"/>
+            </connections>
+            <point key="canvasLocation" x="226.71755725190837" y="27.816901408450704"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Image" width="1024" height="1024"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
